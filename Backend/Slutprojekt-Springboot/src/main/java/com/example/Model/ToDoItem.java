@@ -1,26 +1,11 @@
 package com.example.Model;
 
-public class ToDoItem{
-    private String title;
-    private String description;
-
+public class ToDoItem extends BaseItem{
     public ToDoItem() {}
 
     public ToDoItem(String title, String description) {
-        this.title = title;
-        this.description = description;
+        super(title, description);
     }
-    public String getTitle() {
-        return title;
-    }
-    public void setTitle(String title) {
-        this.title = title;
-    }
-    public String getDescription() {
-        return description;
-    }
-    public void setDescription(String description) {
-        this.description = description;
-    }
+
 
 }

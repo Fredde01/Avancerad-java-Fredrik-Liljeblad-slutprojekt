@@ -1,7 +1,7 @@
 package com.example.Controller;
 
 import com.example.Model.ToDoItem;
-import com.example.Repository.ToDoRepository;
+import com.example.Repository.RepositoryInterface;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
@@ -11,9 +11,9 @@ import java.util.Collection;
 
 // API
 public class ToDoController {
-    private final ToDoRepository repository;
+    private final RepositoryInterface repository;
 
-    public ToDoController(ToDoRepository repository) {
+    public ToDoController(RepositoryInterface repository) {
         this.repository = repository;
     }
 
